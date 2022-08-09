@@ -31,11 +31,8 @@ code {
   -webkit-border-radius: 50%;
   position: absolute;
   z-index: 1;
-  animation: all 2s ease;
 }
 
-#circularcursor:active {
-  border: 1px solid black;
-  height: 40px;
-  width: 40px;
+.cursor-hidden {
+  opacity: 0;
 }
