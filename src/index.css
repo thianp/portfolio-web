@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,12 +14,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+  background-color: theme("colors.white") !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1 {
+  font-weight: 700 !important;
+  font-size: 50px !important;
+}
+
+.down-arrow {
+  color: theme("colors.gray");
+}
+
+.down-arrow:hover {
+  color: black;
+}
+
+/* custom cursor */
 
 * {
   cursor: none;

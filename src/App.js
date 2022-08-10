@@ -1,4 +1,3 @@
-import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Hero from "./components/sections/Hero";
@@ -8,6 +7,8 @@ import Contact from "./components/sections/Contact";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { isMobile } from "react-device-detect";
+import { Link, Element } from "react-scroll";
+import { ArrowDownIcon } from "@heroicons/react/outline";
 
 function App() {
   const [cursorXY, setCursorXY] = useState({ x: 0, y: 0 });
@@ -78,15 +79,19 @@ function App() {
       <div
         id="circularcursor"
         className={cursorClasses}
-        // style={{ left: `${cursorXY.x}px`, top: `${cursorXY.y}px` }}
         style={{
           transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)`,
         }}
       ></div>
-      <div className="App mx-4 md:mx-20 mt-2 space-y-1">
+      <div className="App mx-8 md:mx-32 mt-2 space-y-1 md:space-y-[20px]">
         <Navbar />
         <Hero />
-        <Resume />
+        <Link to="resume" spy={true} smooth={true} offset={50} duration={200}>
+          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black" />
+        </Link>
+        <Element name="resume">
+          <Resume />
+        </Element>
         <Projects />
         <Contact />
         <Footer />
