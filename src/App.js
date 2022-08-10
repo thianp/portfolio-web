@@ -1,13 +1,12 @@
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Hero from "./components/sections/Hero";
-import Resume from "./components/sections/Resume";
+import About from "./components/sections/About";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { isMobile } from "react-device-detect";
-import { Link, Element } from "react-scroll";
 import { ArrowDownIcon } from "@heroicons/react/outline";
 
 function App() {
@@ -86,12 +85,10 @@ function App() {
       <div className="App mx-8 md:mx-32 mt-2 space-y-1 md:space-y-[20px]">
         <Navbar />
         <Hero />
-        <Link to="resume" spy={true} smooth={true} offset={50} duration={200}>
+        <a href="#about">
           <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black" />
-        </Link>
-        <Element name="resume">
-          <Resume />
-        </Element>
+        </a>
+        <About />
         <Projects />
         <Contact />
         <Footer />

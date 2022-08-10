@@ -246,14 +246,14 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "About",
-    href: "#",
+    href: "#about",
   },
   {
     label: "Projects",
-    href: "#",
+    href: "#projects",
   },
   {
-    label: "Contact",
-    href: "#",
+    label: "Contact Me",
+    href: "#contact",
   },
 ];
