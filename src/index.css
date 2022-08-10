@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 code {
@@ -25,8 +26,9 @@ code {
   border: 1.5px solid black;
   height: 20px;
   width: 20px;
-  border-radius: 50%;
   pointer-events: none;
+  transition: all 150ms ease;
+  border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   position: absolute;
@@ -35,4 +37,19 @@ code {
 
 .cursor-hidden {
   opacity: 0;
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  border: 0.5px solid black;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
