@@ -7,6 +7,7 @@ import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
+import { isMobile } from "react-device-detect";
 
 function App() {
   const [cursorXY, setCursorXY] = useState({ x: 0, y: 0 });
@@ -50,7 +51,7 @@ function App() {
 
   const cursorClasses = classNames({
     "cursor-clicked": clicked,
-    "cursor-hidden": hidden,
+    "cursor-hidden": hidden || isMobile,
   });
 
   function createRipple(e) {
