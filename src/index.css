@@ -27,6 +27,16 @@ h1 {
   font-size: 50px !important;
 }
 
+h2 {
+  font-weight: 700 !important;
+  font-size: 30px !important;
+}
+
+h3 {
+  font-weight: 700 !important;
+  font-size: 20px !important;
+}
+
 .down-arrow {
   color: theme("colors.gray");
 }
@@ -35,11 +45,19 @@ h1 {
   color: black;
 }
 
+a {
+  color: theme("colors.gray") !important;
+}
+
+a:hover {
+  color: black !important;
+}
+
 /* custom cursor */
 
-* {
+/* * {
   cursor: none;
-}
+} */
 
 #circularcursor {
   background-color: transparent;

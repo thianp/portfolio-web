@@ -86,9 +86,12 @@ function App() {
         <Navbar />
         <Hero />
         <a href="#about">
-          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black" />
+          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[20px]" />
         </a>
         <About />
+        <a href="#projects">
+          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[20px]" />
+        </a>
         <Projects />
         <Contact />
         <Footer />
