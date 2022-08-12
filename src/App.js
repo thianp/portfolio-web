@@ -75,13 +75,13 @@ function App() {
 
   return (
     <>
-      <div
+      {/* <div
         id="circularcursor"
         className={cursorClasses}
         style={{
           transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)`,
         }}
-      ></div>
+      ></div> */}
       <div className="App mx-8 md:mx-32 mt-2 space-y-1 md:space-y-[20px]">
         <Navbar />
         <Hero />
@@ -93,6 +93,9 @@ function App() {
           <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[20px]" />
         </a>
         <Projects />
+        <a href="#contact">
+          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[20px]" />
+        </a>
         <Contact />
         <Footer />
       </div>
