@@ -5,12 +5,15 @@ import jsLogo from "../../assets/js-logo.png";
 import reactLogo from "../../assets/react-logo.png";
 import nodeLogo from "../../assets/node-logo.png";
 import resume from "../../assets/Thian Patcharaprakiti_resume.pdf";
+import { DownloadIcon } from "@heroicons/react/outline";
 
 export default function About() {
+  const skills = [htmlLogo, cssLogo, jsLogo, reactLogo, nodeLogo];
+
   return (
     <>
       <a id="about"></a>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:mt-[50px]">
+      <div className="grid grid-cols-1 md:grid-cols-4 md:mt-[50px]">
         <div>
           <div className="grid grid-cols-2 md:grid-cols-1">
             <h2 className="inline-block">About</h2>
@@ -20,11 +23,11 @@ export default function About() {
               href={resume}
               download
             >
-              Download as PDF
+              Download as PDF <DownloadIcon className="w-4 h-4 inline-block"/>
             </a>
           </div>
         </div>
-        <div className="mt-4 md:mt-0 space-y-[20px]">
+        <div className="md:col-span-3 mt-4 md:mt-0 space-y-[20px]">
           <Experience
             startDate="Mar 2022"
             endDate="Jul 2022"
@@ -53,12 +56,10 @@ export default function About() {
           />
           <div>
             <h3>Skills</h3>
-            <div className="grid grid-cols-6 md:grid-cols-8 gap-[8px] mt-[10px]">
-              <img src={htmlLogo} />
-              <img src={cssLogo} />
-              <img src={jsLogo} />
-              <img src={reactLogo} />
-              <img src={nodeLogo} />
+            <div className="flex gap-[20px] mt-[10px]">
+              {skills?.map((el) => (
+                <img className="max-h-[60px]" src={el} />
+              ))}
             </div>
           </div>
         </div>

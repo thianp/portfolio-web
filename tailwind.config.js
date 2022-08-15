@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       'white': '#fcfcfc',
       'gray': '#4E4E4E',
+      'pink': '#ff6465'
     },
     fontFamily: {
       DMSans: ['"DM Sans"', 'sans-serif']

@@ -22,7 +22,7 @@ export default function Project({
           </a>
         )}
         <p className="text-gray">
-          Github: <a href={feLink}>frontend</a>, <a href={beLink}>backend</a>
+          Github: <a href={feLink}>frontend <ExternalLinkIcon className="w-4 h-4 inline-block" /></a> <a href={beLink}>backend <ExternalLinkIcon className="w-4 h-4 inline-block" /></a>
         </p>
         <p className="mt-[10px]">{desc}</p>
         <p> Features within scope of responsibility:</p>

@@ -86,15 +86,15 @@ function App() {
         <Navbar />
         <Hero />
         <a href="#about">
-          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[20px]" />
+          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[40px]" />
         </a>
         <About />
         <a href="#projects">
-          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[20px]" />
+          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[40px]" />
         </a>
         <Projects />
         <a href="#contact">
-          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[20px]" />
+          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[40px]" />
         </a>
         <Contact />
         <Footer />

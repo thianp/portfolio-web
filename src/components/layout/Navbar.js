@@ -253,7 +253,7 @@ const NAV_ITEMS: Array<NavItem> = [
     href: "#projects",
   },
   {
-    label: "Contact Me",
+    label: "Contact",
     href: "#contact",
   },
 ];
