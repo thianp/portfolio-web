@@ -14,7 +14,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  background-color: theme("colors.white") !important;
+  background-image: url("./assets/bg-light.png") !important;
+  background-position: center -150px !important;
+}
+@media (max-width: 640px) {
+  body {
+    background-image: url("./assets/bg-light-mobile-top.png"),
+      url("./assets/bg-light-mobile-bottom.png") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center top, center bottom -450px !important;
+  }
 }
 
 code {
@@ -23,11 +33,13 @@ code {
 }
 
 h1 {
-  font-weight: 700 !important;
+  font-family: 'Lora', serif;
+  font-weight: 400 !important;
   font-size: 50px !important;
 }
 
 h2 {
+  font-family: 'Lora', serif;
   font-weight: 700 !important;
   font-size: 30px !important;
 }
@@ -52,6 +64,14 @@ a {
 a:hover {
   color: black !important;
 }
+
+/* .hero {
+  height: 600px;
+  background-size: contain;
+  background-image: url("./assets/bg-light.png");
+  background-repeat: no-repeat;
+  background-position: center;
+} */
 
 /* custom cursor */
 

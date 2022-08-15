@@ -28,8 +28,8 @@ export default function Contact() {
   return (
     <>
       <a id="contact"></a>
+      <div className="grid justify-items-center">
       <h2>Get in touch!</h2>
-      <div className="flex justify-center">
         <div className="grid grid-cols-3 content-center gap-[12px] my-[20px]">
           <span className="col-span-2 self-center">
             <MailIcon className="w-4 h-4 inline-block" /> pthpatchara@gmail.com

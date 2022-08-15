@@ -1,14 +1,22 @@
 import Experience from "../Experience";
-import htmlLogo from "../../assets/html-logo.png";
-import cssLogo from "../../assets/css-logo.png";
-import jsLogo from "../../assets/js-logo.png";
-import reactLogo from "../../assets/react-logo.png";
-import nodeLogo from "../../assets/node-logo.png";
 import resume from "../../assets/Thian Patcharaprakiti_resume.pdf";
 import { DownloadIcon } from "@heroicons/react/outline";
 
 export default function About() {
-  const skills = [htmlLogo, cssLogo, jsLogo, reactLogo, nodeLogo];
+  // const skills = [htmlLogo, cssLogo, jsLogo, reactLogo, nodeLogo];
+  const skills = [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "React JS",
+    "Bootstrap",
+    "Tailwind",
+    "Chakra UI",
+    "Daisy UI",
+    "Node JS",
+    "Postman",
+    "MySQL",
+  ];
 
   return (
     <>
@@ -23,7 +31,7 @@ export default function About() {
               href={resume}
               download
             >
-              Download as PDF <DownloadIcon className="w-4 h-4 inline-block"/>
+              Download resume <DownloadIcon className="w-4 h-4 inline-block" />
             </a>
           </div>
         </div>
@@ -56,10 +64,13 @@ export default function About() {
           />
           <div>
             <h3>Skills</h3>
-            <div className="flex gap-[20px] mt-[10px]">
-              {skills?.map((el) => (
-                <img className="max-h-[60px]" src={el} />
-              ))}
+            <div className=" mt-[10px]">
+              <ul>
+                {skills?.map((el) => (
+                  // <img className="max-h-[60px]" src={el} />
+                  <li>&emsp; &#9900; {el}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

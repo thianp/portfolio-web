@@ -14,6 +14,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  Heading,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -39,14 +40,14 @@ export default function Navbar() {
         px={0}
       >
         <Flex flex={{ base: 1 }} justify={{ base: "start", md: "start" }}>
-          <Text
+          <Heading
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             color={useColorModeValue("gray.800", "white")}
             fontSize="2xl"
             className="select-none"
           >
-            tp.
-          </Text>
+            <p style={{ fontWeight: "300" }}>tp.</p>
+          </Heading>
         </Flex>
         <Flex
           flex={{ base: 1, md: "auto" }}
@@ -97,9 +98,9 @@ const DesktopNav = () => {
                 color={linkColor}
                 _hover={{
                   textDecoration: "none",
-                  color: 'black',
+                  color: "black",
                 }}
-                style={{ cursor: 'none' }}
+                style={{ cursor: "none" }}
               >
                 {navItem.label}
               </Link>
