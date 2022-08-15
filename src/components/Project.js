@@ -32,7 +32,7 @@ export default function Project({
           ))}
         </ul>
       </div>
-      <div className="rounded-lg overflow-hidden mt-[20px] md:mt-0">
+      <div className="overflow-hidden mt-[20px] md:mt-0">
         <Carousel
           showIndicators={false}
           showStatus={false}

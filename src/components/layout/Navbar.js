@@ -33,16 +33,16 @@ export default function Navbar() {
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
-        // borderBottom={1}
+        borderBottom={1}
         borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
+        borderColor={useColorModeValue("gray.800", "gray.900")}
         align={"center"}
         px={0}
       >
         <Flex flex={{ base: 1 }} justify={{ base: "start", md: "start" }}>
           <Heading
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            color={useColorModeValue("gray.800", "white")}
+            color={useColorModeValue("gray.800", "gray.200")}
             fontSize="2xl"
             className="select-none"
           >

@@ -35,7 +35,7 @@ export default function Contact() {
             <MailIcon className="w-4 h-4 inline-block" /> pthpatchara@gmail.com
           </span>
           <button
-            className="border-[2px] rounded-full p-[8px] content-between"
+            className="border-[2px] rounded-full p-[8px] content-between w-[100px]"
             onClick={() => handleCopyClick("pthpatchara@gmail.com")}
           >
             <span>

@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { isMobile } from "react-device-detect";
 import { ArrowDownIcon } from "@heroicons/react/outline";
+import arrow from "./assets/arrow.svg";
 
 function App() {
   const [cursorXY, setCursorXY] = useState({ x: 0, y: 0 });
@@ -86,15 +87,15 @@ function App() {
         <Navbar />
         <Hero />
         <a href="#about">
-          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[40px]" />
+          <img src={arrow} className="down-arrow w-10 h-10s my-[40px]" />
         </a>
         <About />
         <a href="#projects">
-          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[40px]" />
+          <img src={arrow} className="down-arrow w-10 h-10s my-[40px]" />
         </a>
         <Projects />
         <a href="#contact">
-          <ArrowDownIcon className="down-arrow w-12 h-12 text-gray hover:text-black my-[40px]" />
+          <img src={arrow} className="down-arrow w-10 h-10s my-[40px]" />
         </a>
         <Contact />
         <Footer />
