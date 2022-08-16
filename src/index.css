@@ -17,15 +17,6 @@ body {
   background-image: url("./assets/bg-light.png") !important;
   background-position: center -150px !important;
 }
-@media (max-width: 640px) {
-  body {
-    background-image: url("./assets/bg-light-mobile-top.png"),
-      url("./assets/bg-light-mobile-bottom.png") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center top, center bottom -450px !important;
-  }
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -35,7 +26,7 @@ code {
 h1 {
   font-family: 'Lora', serif;
   font-weight: 400 !important;
-  font-size: 50px !important;
+  font-size: 70px !important;
 }
 
 h2 {
@@ -45,7 +36,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   font-size: 20px !important;
 }
 
@@ -65,13 +56,23 @@ a:hover {
   color: black !important;
 }
 
-/* .hero {
-  height: 600px;
-  background-size: contain;
-  background-image: url("./assets/bg-light.png");
-  background-repeat: no-repeat;
-  background-position: center;
-} */
+hr {
+  border-color: black !important;
+}
+
+@media (max-width: 640px) {
+  body {
+    background-image: url("./assets/bg-light-mobile-top.png"),
+      url("./assets/bg-light-mobile-bottom.png") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center top, center bottom -450px !important;
+  }
+
+  h1 {
+    font-size: 50px !important;
+  }
+}
 
 /* custom cursor */
 

@@ -83,21 +83,27 @@ function App() {
           transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)`,
         }}
       ></div> */}
-      <div className="App mx-8 md:mx-32 mt-2 space-y-1 md:space-y-[20px]">
-        <Navbar />
-        <Hero />
-        <a href="#about">
-          <img src={arrow} className="down-arrow w-10 h-10s my-[40px]" />
-        </a>
-        <About />
-        <a href="#projects">
-          <img src={arrow} className="down-arrow w-10 h-10s my-[40px]" />
-        </a>
-        <Projects />
-        <a href="#contact">
-          <img src={arrow} className="down-arrow w-10 h-10s my-[40px]" />
-        </a>
-        <Contact />
+      <div className="App">
+        <div className="mx-8 md:mx-32 my-2">
+          <Navbar />
+        </div>
+        <hr />
+        <div className="mx-8 md:mx-32 mt-20 mb-16 md:my-[40px] space-y-1 md:space-y-[20px]">
+          <Hero />
+          <a href="#about">
+            <img src={arrow} className="down-arrow w-10 h-10s my-[40px]" />
+          </a>
+          <About />
+          <a href="#projects">
+            <img src={arrow} className="down-arrow w-10 h-10s my-[40px]" />
+          </a>
+          <Projects />
+          <a href="#contact">
+            <img src={arrow} className="down-arrow w-10 h-10s my-[40px]" />
+          </a>
+          <Contact />
+        </div>
+        <hr className="border-gray" />
         <Footer />
       </div>
     </>

@@ -12,7 +12,8 @@ export default function Projects() {
       <a id="projects"></a>
       <div className="md:mt-[50px]">
         <h2>Projects</h2>
-        <div className="mt-4 md:mt-[20px] space-y-[40px]">
+        <hr className="mt-4 md:mt-[20px]"/>
+        <div className="mt-8 md:mt-[40px] space-y-[40px]">
           <Project
             title="Petcation (Group Project)"
             websiteLink="https://petcation.taptap.ooo/"

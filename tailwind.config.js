@@ -9,7 +9,7 @@ module.exports = {
     },
     fontFamily: {
       Lora: ['"Lora', "serif"],
-      DMSans: ['"DM Sans"', "sans-serif"],
+      Nunito: ['"Nunito"', "sans-serif"],
     },
     extend: {},
   },
