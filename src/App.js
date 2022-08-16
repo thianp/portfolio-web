@@ -7,8 +7,8 @@ import Contact from "./components/sections/Contact";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { isMobile } from "react-device-detect";
-import { ArrowDownIcon } from "@heroicons/react/outline";
 import arrow from "./assets/arrow.svg";
+import CircleText from "./components/CircleText";
 
 function App() {
   const [cursorXY, setCursorXY] = useState({ x: 0, y: 0 });
@@ -88,18 +88,21 @@ function App() {
           <Navbar />
         </div>
         <hr />
-        <div className="mx-8 md:mx-32 mt-20 mb-16 md:my-[40px] space-y-1 md:space-y-[20px]">
+        <div className="mx-8 md:mx-32 mt-20 md:mt-[20px] mb-16 md:mb-[40px] space-y-1 md:space-y-[20px]">
           <Hero />
-          <a href="#about">
-            <img src={arrow} className="down-arrow w-10 h-10s my-[40px]" />
-          </a>
+          <div className="flex justify-between pb-[40px]">
+            <a href="#about" className="self-end">
+              <img src={arrow} className="w-10 h-10" />
+            </a>
+            <CircleText />
+          </div>
           <About />
           <a href="#projects">
-            <img src={arrow} className="down-arrow w-10 h-10s my-[40px]" />
+            <img src={arrow} className="w-10 h-10s my-[40px]" />
           </a>
           <Projects />
           <a href="#contact">
-            <img src={arrow} className="down-arrow w-10 h-10s my-[40px]" />
+            <img src={arrow} className="w-10 h-10s my-[40px]" />
           </a>
           <Contact />
         </div>

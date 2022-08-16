@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="py-[40px] grid justify-items-center">
       <div>Designed & developed by Thian Patcharaprakiti</div>
       <div>
-        <a href="https://github.com/thianp">Github</a> &#9900;{" "}
+        <a href="https://github.com/thianp">Github</a>{" "}·{" "}
         <a href="https://www.linkedin.com/in/thian-patcharaprakiti-367bb017a/">
           LinkedIn
         </a>

@@ -24,13 +24,13 @@ code {
 }
 
 h1 {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-weight: 400 !important;
   font-size: 70px !important;
 }
 
 h2 {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-weight: 700 !important;
   font-size: 30px !important;
 }
@@ -38,14 +38,6 @@ h2 {
 h3 {
   font-weight: 600 !important;
   font-size: 20px !important;
-}
-
-.down-arrow {
-  color: theme("colors.gray");
-}
-
-.down-arrow:hover {
-  color: black;
 }
 
 a {
@@ -57,7 +49,20 @@ a:hover {
 }
 
 hr {
+  border-top-width: 0.8px !important;
   border-color: black !important;
+}
+
+hr.short-hr {
+  border-top-width: 3px !important;
+}
+
+button {
+  border: 0.8px solid black;
+}
+
+.circle-text {
+  animation: spin 5s linear infinite;
 }
 
 @media (max-width: 640px) {
@@ -110,5 +115,14 @@ span.ripple {
   to {
     transform: scale(4);
     opacity: 0;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
