@@ -65,6 +65,12 @@ button {
   animation: spin 5s linear infinite;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px !important;
+  }
+}
+
 @media (max-width: 640px) {
   body {
     background-image: url("./assets/bg-light-mobile-top.png"),
@@ -75,7 +81,7 @@ button {
   }
 
   h1 {
-    font-size: 50px !important;
+    font-size: 40px !important;
   }
 }
 

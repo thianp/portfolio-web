@@ -53,12 +53,12 @@ export default function About() {
             org="Chulalongkorn University"
           />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-[20px]">
-            {Object.keys(skills).map((key) => (
-              <div>
+            {Object.keys(skills).map((key, idx) => (
+              <div key={idx}>
                 <h3>{key}</h3>
                 <ul className="mt-[10px]">
-                  {skills[key].map((el) => (
-                    <li>&emsp; &#9900; {el}</li>
+                  {skills[key].map((el, i) => (
+                    <li key={`${key}-${i}`}>&emsp; &#9900; {el}</li>
                   ))}
                 </ul>
               </div>

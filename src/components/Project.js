@@ -22,13 +22,19 @@ export default function Project({
           </a>
         )}
         <p className="text-gray">
-          Github: <a href={feLink}>frontend <ExternalLinkIcon className="w-4 h-4 inline-block" /></a> <a href={beLink}>backend <ExternalLinkIcon className="w-4 h-4 inline-block" /></a>
+          Github:{" "}
+          <a href={feLink}>
+            frontend <ExternalLinkIcon className="w-4 h-4 inline-block" />
+          </a>{" "}
+          <a href={beLink}>
+            backend <ExternalLinkIcon className="w-4 h-4 inline-block" />
+          </a>
         </p>
         <p className="mt-[10px]">{desc}</p>
         <p> Features within scope of responsibility:</p>
         <ul>
-          {features?.map((el) => (
-            <li>&emsp; &#9900; {el}</li>
+          {features?.map((el, idx) => (
+            <li key={idx}>&emsp; &#9900; {el}</li>
           ))}
         </ul>
       </div>
@@ -40,8 +46,8 @@ export default function Project({
           infiniteLoop={true}
           renderThumbs={() => {}}
         >
-          {imgs?.map((el) => (
-            <div>
+          {imgs?.map((el, idx) => (
+            <div key={idx}>
               <img src={el} />
             </div>
           ))}
