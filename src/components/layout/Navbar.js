@@ -31,13 +31,7 @@ export default function Navbar() {
       <Flex
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
-        py={{ base: 2 }}
-        px={{ base: 4 }}
-        // borderBottom={1}
-        // borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.800", "gray.900")}
         align={"center"}
-        px={0}
       >
         <Flex flex={{ base: 1 }} justify={{ base: "start", md: "start" }}>
           <Heading
@@ -173,7 +167,6 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("white", "gray.800")}
       p={4}
       display={{ md: "none" }}
     >
