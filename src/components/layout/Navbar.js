@@ -94,7 +94,6 @@ const DesktopNav = () => {
                   textDecoration: "none",
                   color: "black",
                 }}
-                style={{ cursor: "none" }}
               >
                 {navItem.label}
               </Link>

@@ -85,45 +85,6 @@ button {
   }
 }
 
-/* custom cursor */
-
-/* * {
-  cursor: none;
-} */
-
-#circularcursor {
-  background-color: transparent;
-  border: 1.5px solid black;
-  height: 20px;
-  width: 20px;
-  pointer-events: none;
-  transition: all 150ms ease;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-}
-
-.cursor-hidden {
-  opacity: 0;
-}
-
-span.ripple {
-  position: absolute;
-  border-radius: 50%;
-  transform: scale(0);
-  animation: ripple 600ms linear;
-  border: 0.5px solid black;
-}
-
-@keyframes ripple {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
-}
-
 @keyframes spin {
   from {
     transform: rotate(360deg);
