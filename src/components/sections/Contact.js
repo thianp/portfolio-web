@@ -30,12 +30,12 @@ export default function Contact() {
       <a id="contact"></a>
       <div className="grid justify-items-center">
       <h2>Get in touch!</h2>
-        <div className="grid grid-cols-3 content-center gap-[12px] my-[20px]">
+        <div className="grid grid-cols-1 sm:grid-cols-3 content-center gap-[12px] my-[20px]">
           <span className="col-span-2 self-center">
             <MailIcon className="w-4 h-4 inline-block" /> pthpatchara@gmail.com
           </span>
           <button
-            className="rounded-full p-[8px] content-between w-[100px]"
+            className="rounded-full p-[8px] content-between w-[100px] place-self-center"
             onClick={() => handleCopyClick("pthpatchara@gmail.com")}
           >
             <span>

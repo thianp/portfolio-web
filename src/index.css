@@ -65,7 +65,7 @@ button {
   animation: spin 5s linear infinite;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   h1 {
     font-size: 50px !important;
   }
