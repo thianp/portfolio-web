@@ -77,7 +77,7 @@ button {
       url("./assets/bg-light-mobile-bottom.png") !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
-    background-position: center top, center bottom -450px !important;
+    background-position: center top, center bottom -300px !important;
   }
 
   h1 {
