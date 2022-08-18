@@ -6,10 +6,12 @@ import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import arrow from "./assets/arrow.svg";
 import CircleText from "./components/CircleText";
+import VerticalMenu from "./components/VerticalMenu";
 
 function App() {
   return (
     <div className="App">
+      <VerticalMenu />
       <div className="mx-8 md:mx-32 my-2">
         <Navbar />
       </div>
@@ -32,7 +34,6 @@ function App() {
         </a>
         <Contact />
       </div>
-      <hr className="border-gray" />
       <Footer />
     </div>
   );

@@ -5,7 +5,7 @@ module.exports = {
     colors: {
       white: "#fcfcfc",
       gray: "#4E4E4E",
-      pink: "#ff6465",
+      black: "#000",
     },
     fontFamily: {
       Lora: ['"Lora', "serif"],
