@@ -65,6 +65,10 @@ button {
   animation: spin 5s linear infinite;
 }
 
+.circle-text.paused {
+  animation-play-state: paused;
+}
+
 .footer-menu {
   display: none;
 }
