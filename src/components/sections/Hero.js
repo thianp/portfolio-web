@@ -12,7 +12,7 @@ export default function Hero() {
             <h3>Hello, I'm Thian,</h3>
           </div>
           <h1>
-            A Frontend <br />
+            A Full Stack <br />
             Web Developer
           </h1>
         </div>
