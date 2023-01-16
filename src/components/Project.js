@@ -48,7 +48,7 @@ export default function Project({
         >
           {imgs?.map((el, idx) => (
             <div key={idx}>
-              <img src={el} />
+              <img alt={`${title} ${idx}`} src={el} />
             </div>
           ))}
         </Carousel>

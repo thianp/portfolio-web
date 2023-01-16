@@ -20,17 +20,17 @@ function App() {
         <Hero />
         <div className="flex justify-between pb-[40px]">
           <a href="#about" className="self-end">
-            <img src={arrow} className="w-10 h-10" />
+            <img src={arrow} alt="" className="w-10 h-10" />
           </a>
           <CircleText />
         </div>
         <About />
         <a href="#projects">
-          <img src={arrow} className="w-10 h-10s my-[40px]" />
+          <img src={arrow} alt="" className="w-10 h-10s my-[40px]" />
         </a>
         <Projects />
         <a href="#contact">
-          <img src={arrow} className="w-10 h-10s my-[40px]" />
+          <img src={arrow} alt="" className="w-10 h-10s my-[40px]" />
         </a>
         <Contact />
       </div>

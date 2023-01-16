@@ -9,7 +9,7 @@ import homebody3 from "../../assets/homebody-3.png";
 export default function Projects() {
   return (
     <>
-      <a id="projects"></a>
+      <a id="projects" href="/#projects"> </a>
       <div className="md:mt-[50px]">
         <h2>Projects</h2>
         <hr className="mt-4 md:mt-[20px]"/>

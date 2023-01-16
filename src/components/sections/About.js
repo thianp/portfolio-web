@@ -11,7 +11,7 @@ export default function About() {
 
   return (
     <>
-      <a id="about"></a>
+      <a id="about" href="/#about"> </a>
       <div className="grid grid-cols-1 md:grid-cols-4 md:mt-[50px]">
         <div>
           <div className="grid grid-cols-2 md:grid-cols-1">

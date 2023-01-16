@@ -27,7 +27,7 @@ export default function Contact() {
 
   return (
     <>
-      <a id="contact"></a>
+      <a id="contact" href="/#contact"> </a>
       <div className="grid justify-items-center">
       <h2>Get in touch!</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 content-center gap-[12px] my-[20px]">
