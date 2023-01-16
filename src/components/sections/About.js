@@ -4,8 +4,8 @@ import { DownloadIcon } from "@heroicons/react/outline";
 
 export default function About() {
   const skills = {
-    Skills: ["HTML", "CSS", "Javascript", "React JS", "Node JS", "MySQL"],
-    Libraries: ["Bootstrap", "Tailwind", "Chakra UI", "Daisy UI"],
+    Skills: ["HTML", "CSS", "Javascript", "Python", "React JS", "Django", "Node JS", "MySQL"],
+    Libraries: ["Material UI", "Bootstrap", "Tailwind", "Chakra UI", "Daisy UI"],
     APIs: ["Postman", "Omise Payment"],
   };
 
@@ -26,6 +26,13 @@ export default function About() {
           </div>
         </div>
         <div className="md:col-span-3 mt-4 md:mt-0 space-y-[20px]">
+          <Experience
+            startDate="Sep 2022"
+            endDate="Dec 2022"
+            title="Software Engineer (Full Stack)"
+            org="AppMan Co., Ltd."
+            details="Built new full stack features for the customer-facing web app using React JS and Django, integrating with the OCR product built by the company’s internal machine learning team to display text extraction results for multiple document types"
+          />
           <Experience
             startDate="Mar 2022"
             endDate="Jul 2022"
